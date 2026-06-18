@@ -12,6 +12,7 @@ AI request.
 | `radiomics` | User describes handcrafted features or Pyradiomics-style workflow | 组学 |
 | `deep-learning` | User describes CNN, transformer, segmentation, classification, foundation models, or multimodal AI | 深度 |
 | `study-design` | User gives data and asks what project can be done | 设计 |
+| `grant-writing` | User asks to write, polish, revise, or structure NSFC/national or provincial natural science foundation proposals | 基金 |
 | `validation` | User asks whether the model or result is reliable | 验证 |
 | `checklist` | User asks about CLAIM, CLEAR, RQS, IBSI, TRIPOD+AI, PROBAST+AI, STARD-AI, METRICS | 规范 |
 | `data` | User asks about DICOM, NIfTI, masks, labels, privacy, repository, or sharing | 数据 |
@@ -43,6 +44,9 @@ model_type:
 target_journal_or_output:
 candidate_journals:
 publication_goal:
+funding_scheme:
+proposal_section:
+grant_deadline_or_year:
 main_constraint:
 ```
 
@@ -63,6 +67,7 @@ Ask before final wording when missing facts would otherwise fabricate:
 
 - "我有 200 例 CT 想做预后模型" -> 设计 + 组学 or 深度 + 验证
 - "近三年影像 AI 前沿有哪些" -> 前沿 + 文献
+- "帮我润色国自然立项依据" -> 基金 + 前沿 + 设计 + 写作
 - "帮我看 Methods 是否符合 CLAIM" -> 规范 + 深度 + 验证
 - "文章写好了，帮我选刊" -> 选刊 + 文献 + 规范 + 验证
 - "审稿人说没有外部验证怎么回复" -> 回复 + 验证

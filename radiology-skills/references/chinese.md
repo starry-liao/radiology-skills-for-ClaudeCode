@@ -12,6 +12,7 @@ Use this file when the user writes in Chinese or provides Chinese author notes.
 | 组学 | radiomics |
 | 深度 | deep learning |
 | 设计 | study design |
+| 基金 | grant proposal writing |
 | 验证 | validation and leakage |
 | 规范 | reporting checklist |
 | 数据 | data and availability |
@@ -42,6 +43,14 @@ Use this file when the user writes in Chinese or provides Chinese author notes.
 | 投稿定位 | submission positioning |
 | 期刊匹配度 | journal fit |
 | 备选期刊梯队 | journal submission tiers |
+| 国自然 | National Natural Science Foundation of China / NSFC |
+| 省自然 | provincial natural science foundation |
+| 立项依据 | rationale and significance |
+| 科学问题 | scientific question |
+| 研究内容 | research aims and tasks |
+| 技术路线 | technical route |
+| 创新点 | innovation points |
+| 可行性分析 | feasibility analysis |
 
 ## Chinese output rule
 

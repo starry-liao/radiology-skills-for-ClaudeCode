@@ -7,8 +7,9 @@ description: >-
   features, deep learning classification/segmentation/prognosis, multimodal models,
   external validation, data leakage, CLAIM, CLEAR, RQS, IBSI, TRIPOD+AI, PROBAST+AI,
   STARD-AI, METRICS, manuscript Methods/Results/Discussion, target journal selection,
-  journal fit, submission strategy, reviewer response, or Chinese-to-English radiology
-  manuscript support.
+  journal fit, submission strategy, grant applications, NSFC/national or provincial
+  natural science foundation proposals, reviewer response, or Chinese-to-English
+  radiology manuscript support.
 ---
 
 # Radiology Skills
@@ -48,6 +49,7 @@ Identify the task mode, then load only the relevant reference file.
 | Traditional radiomics workflow | 组学 | `references/radiomics.md` |
 | Deep learning, segmentation, foundation models | 深度 | `references/deep-learning.md` |
 | Turn data into a feasible study | 设计 | `references/study-design.md` |
+| Polish or restructure grant/funding proposals for imaging AI projects | 基金 | `references/grant-writing.md` |
 | Check validation, leakage, metrics, calibration | 验证 | `references/validation.md` |
 | Pick reporting checklist or audit compliance | 规范 | `references/checklists.md` |
 | Data, privacy, DICOM/NIfTI/ROI/masks, sharing | 数据 | `references/data.md` |
@@ -60,8 +62,8 @@ Identify the task mode, then load only the relevant reference file.
 ## Standard workflow
 
 1. **Route.** Classify the request as `frontier`, `literature`, `radiomics`,
-   `deep-learning`, `study-design`, `validation`, `checklist`, `data`, `writing`,
-   `journal-selection`, `response`, or `mixed`.
+   `deep-learning`, `study-design`, `grant-writing`, `validation`, `checklist`,
+   `data`, `writing`, `journal-selection`, `response`, or `mixed`.
 2. **Build the study card.** Capture disease, modality, sample size, centers,
    labels, endpoint, segmentation, data format, split plan, external validation,
    clinical variables, and intended output.
@@ -128,6 +130,28 @@ For journal selection, return:
 - [missing facts before final journal advice]
 ```
 
+For grant proposal polishing, return:
+
+```text
+基金申报定位
+- 项目类型：
+- 核心科学问题：
+- 当前短板：
+
+结构补强
+- 立项依据：
+- 研究目标/内容：
+- 技术路线：
+- 创新点：
+- 可行性/研究基础：
+
+润色稿
+[only rewrite supplied text; do not invent preliminary data]
+
+需要作者确认
+- [missing facts before final proposal text]
+```
+
 ## Scripts
 
 - `scripts/radiology_audit.py`: quick Markdown audit from a JSON study card.
@@ -146,3 +170,5 @@ Scripts are helpers, not substitutes for manual scientific judgment.
   validation unless the patient grouping is explicitly preserved.
 - Do not write final claims from placeholder performance numbers.
 - Do not promise acceptance or rank journals only by impact factor.
+- Do not invent grant preliminary results, team expertise, publications, ethics approvals,
+  equipment, funded projects, collaborations, or official guideline requirements.
