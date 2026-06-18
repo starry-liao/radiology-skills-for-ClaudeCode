@@ -1,28 +1,239 @@
 # Radiology Skills
 
-Codex skill for radiomics, medical imaging deep learning, imaging AI frontiers,
-study design, validation audit, reporting checklists, manuscript writing, and
-reviewer response.
+这是一个面向影像组学、影像深度学习和医学影像 AI 研究的 Codex skill，用于帮助研究者完成前沿选题、文献梳理、课题设计、方法学审查、论文写作和审稿回复。
 
-## What It Covers
+## 按需求分类
 
-- 入口: route user requests and build a study card
-- 前沿: identify recent research frontiers and match them to user data
-- 文献: organize high-impact radiomics and imaging deep learning literature
-- 组学: audit traditional radiomics workflows
-- 深度: design and audit medical imaging deep learning studies
-- 设计: turn datasets into feasible research projects
-- 验证: detect leakage, weak validation, and metric/reporting gaps
-- 规范: choose CLAIM, CLEAR, RQS, IBSI, TRIPOD+AI, PROBAST+AI, STARD-AI, and related frameworks
-- 数据: handle imaging data, masks, privacy, and availability statements
-- 写作: draft Methods, Results, Discussion, titles, and abstracts
-- 回复: prepare reviewer responses
-- 中文: support Chinese author notes and terminology
-- 依据: source and guideline provenance
+### 1. 我不知道这个课题能不能做
 
-## Install
+适合场景：你有一批 CT、MRI、PET/CT、超声、钼靶或多模态影像数据，但还不确定能做什么研究。
 
-Clone this repository and copy the skill folder into your Codex skills directory:
+它会帮你梳理：
+
+- 疾病、模态、样本量、中心数量、标签来源和终点是否足够支撑研究；
+- 数据是适合做诊断、分型、分期、预后、疗效预测、复发预测，还是分割任务；
+- 是否有外部验证、时间验证、临床变量、分割 mask、随访信息和病理/分子标签；
+- 当前数据最适合走影像组学、深度学习、多模态融合、放射基因组学，还是先做可行性研究。
+
+典型输出：
+
+- 研究资料卡；
+- 可做方向和不建议做的方向；
+- 关键缺失信息；
+- 下一步需要补充的数据或分析。
+
+### 2. 我想找近三年的前沿方向和创新点
+
+适合场景：你想结合自己的数据，从 Radiology、Lancet Digital Health、Nature Medicine、Nature Communications、Lancet Oncology、npj Digital Medicine、npj Precision Oncology 等高影响力期刊中寻找影像 AI 前沿。
+
+它会帮你分析：
+
+- 近三年影像组学和影像深度学习的主要趋势；
+- 基础模型、自监督学习、视觉语言模型、多模态融合、放射基因组学、纵向影像、弱监督、域适应、联邦学习等方向是否适合你的数据；
+- 哪些方向只是热门但不适合你当前数据；
+- 如何把前沿方法转化成可执行、可投稿的研究问题。
+
+典型输出：
+
+- 前沿方向地图；
+- 3-5 个可选课题；
+- 每个课题的研究问题、方法路线、验证路线、创新点和主要风险；
+- 不建议选择的方向及原因。
+
+### 3. 我想系统梳理文献
+
+适合场景：你需要整理影像组学、影像深度学习、医学影像 AI 或某个疾病/模态方向的高水平文献。
+
+它会帮你完成：
+
+- 制定 PubMed、期刊官网、出版社页面和综述的检索策略；
+- 按疾病、模态、任务、模型方法、验证方式和临床场景筛选文献；
+- 区分直接相关文献、可迁移方法文献、背景文献和弱相关文献；
+- 从文献中总结常见研究设计、验证方式、模型路线和创新缺口。
+
+典型输出：
+
+- 检索策略；
+- 文献证据图谱；
+- 代表性高影响力论文清单；
+- 可迁移的方法规律；
+- 与你课题最相关的研究空白。
+
+### 4. 我想做影像组学研究
+
+适合场景：你计划提取 handcrafted radiomics features，使用 Pyradiomics 或类似工具做特征筛选、建模和预测。
+
+它会重点检查：
+
+- ROI/mask 来源、分割一致性、读片者信息和质量控制；
+- 重采样、灰度离散化、归一化、滤波和 IBSI 相关设置；
+- 特征筛选是否只在训练集内完成；
+- 是否存在先提特征、先筛特征、先标准化再划分训练测试集的数据泄漏；
+- 模型复杂度、样本量、事件数、校准、决策曲线和外部验证是否匹配。
+
+典型输出：
+
+- 影像组学流程审查；
+- 数据泄漏风险；
+- 方法学补救建议；
+- Methods 部分需要补充的细节。
+
+### 5. 我想做影像深度学习研究
+
+适合场景：你想做 CNN、Transformer、3D 模型、分割模型、检测模型、预后模型、基础模型迁移、多模态模型或报告辅助模型。
+
+它会帮你设计：
+
+- 2D、2.5D、3D、序列模型、Transformer、基础模型或多模态融合路线；
+- 小样本下是否应使用迁移学习、自监督预训练、简单基线或嵌套交叉验证；
+- 图像、mask、临床变量、病理/分子标签和报告文本如何进入模型；
+- 数据增强、类别不平衡、超参数搜索、基线模型和外部验证如何安排；
+- 如何避免切片级随机划分、患者重叠、测试集调参和报告标签噪声。
+
+典型输出：
+
+- 模型路线建议；
+- 训练/验证/测试设计；
+- 推荐指标和对照基线；
+- 需要避免的高风险做法。
+
+### 6. 我想把现有数据设计成一个完整课题
+
+适合场景：你已经知道疾病、模态和样本量，希望形成一个可投稿的研究方案。
+
+它会帮你明确：
+
+- 临床问题、目标人群、预测终点和使用场景；
+- 最小可行方法和更强方法；
+- 内部验证、时间验证、外部验证或多中心验证方案；
+- 主要指标、次要指标、校准、临床实用性和亚组分析；
+- 目标期刊更看重临床验证、方法透明性、机制解释还是前沿模型。
+
+典型输出：
+
+- 课题标题；
+- 研究假设；
+- 数据需求；
+- 方法路线；
+- 验证路线；
+- 投稿亮点；
+- 最大风险和降风险方案。
+
+### 7. 我担心模型结果不可信
+
+适合场景：你已经有 AUC、C-index、Dice、敏感度、特异度或其他结果，但不确定是否可靠。
+
+它会帮你审查：
+
+- 是否按患者级划分训练集、验证集和测试集；
+- 同一患者的切片、病灶、序列、期相或随访图像是否跨集合泄漏；
+- 特征选择、标准化、缺失值填补、harmonization、数据增强是否发生在错误阶段；
+- 是否使用测试集做阈值选择、模型选择或早停；
+- 是否报告置信区间、校准、决策曲线、亚组分析和失败案例。
+
+典型输出：
+
+- 验证可信度判断；
+- 数据泄漏风险等级；
+- 必须重做的分析；
+- 结果表述应如何降调。
+
+### 8. 我想按高水平期刊规范来写
+
+适合场景：你准备投 Radiology、Lancet Digital Health、Nature Medicine、eClinicalMedicine、EBioMedicine、Cell Reports Medicine、npj Digital Medicine 等期刊，需要符合影像 AI 报告规范。
+
+它会帮你选择和应用：
+
+- CLAIM / CLAIM 2024；
+- CLEAR、RQS、METRICS 和 IBSI；
+- TRIPOD+AI 和 PROBAST+AI；
+- STARD-AI；
+- CONSORT-AI 和 SPIRIT-AI；
+- 目标期刊的数据共享、代码共享和报告要求。
+
+典型输出：
+
+- 应使用的主要和辅助 checklist；
+- 当前稿件缺失项；
+- Methods、Results、Discussion 需要补充的位置；
+- 投稿前方法学风险清单。
+
+### 9. 我想处理数据、mask、隐私和共享问题
+
+适合场景：你需要整理 DICOM、NIfTI、DICOM-SEG、RTSTRUCT、mask、特征表、临床表或多中心数据。
+
+它会帮你梳理：
+
+- 数据目录、患者 ID、检查 ID、序列 ID、病灶 ID 和时间点；
+- 图像、mask、标签、临床变量和模型输出之间的对应关系；
+- 去标识化、伦理限制、数据使用协议、医院政策和受控访问；
+- 数据、代码、模型权重、特征表和补充材料的可共享程度。
+
+典型输出：
+
+- 数据清单；
+- 数据可用性声明；
+- 隐私和共享限制说明；
+- 投稿时可写入 Data Availability 的文本框架。
+
+### 10. 我想写论文或修改稿件
+
+适合场景：你需要写 Methods、Results、Discussion、摘要、标题，或把中文作者笔记转成英文稿件内容。
+
+它会帮你完成：
+
+- Methods 的结构化写作；
+- Results 中队列、验证集、性能、校准、亚组和失败案例的表达；
+- Discussion 中贡献、局限性、临床意义和未来工作的表述；
+- 避免把“相关性”写成“因果”，避免把“AUC 高”写成“可临床使用”；
+- 中文研究想法到英文投稿语言的转换。
+
+典型输出：
+
+- 可直接使用的英文段落；
+- 中文修改建议；
+- 需要作者补充的事实清单；
+- 更稳妥的结论表达。
+
+### 11. 我需要回复审稿人
+
+适合场景：审稿人质疑没有外部验证、样本量小、数据泄漏、分割不清楚、缺少校准、缺少临床实用性或报告规范不足。
+
+它会帮你制定：
+
+- 每条审稿意见的回应策略；
+- 能补做的分析、不能补做时的合理解释和局限性表述；
+- 对 manuscript 的具体修改位置和修改内容；
+- 避免承诺没有完成的实验、外部验证、代码公开或新图表。
+
+典型输出：
+
+- 逐点回复；
+- 修改说明；
+- 英文 response letter 段落；
+- 需要作者确认的事实和行号。
+
+### 12. 我需要依据和来源
+
+适合场景：你需要知道某个规则、建议或写法来自哪里，或者要确认最新指南和期刊要求。
+
+它会帮你追溯：
+
+- 报告规范和方法学建议的来源；
+- 文献检索的时间范围和期刊范围；
+- 近三年前沿文献的代表性 PMID；
+- 需要重新联网核验的指南、期刊政策或最新文献。
+
+典型输出：
+
+- 来源依据；
+- 推荐检索式；
+- 访问日期或检索日期；
+- 需要补充核验的关键点。
+
+## 安装
+
+克隆这个仓库，并把 skill 文件夹复制到 Codex 的 skills 目录：
 
 ```powershell
 git clone https://github.com/huang-sir1/radiology-skills.git
@@ -31,7 +242,7 @@ New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
 Copy-Item -Recurse -Force .\radiology-skills "$env:USERPROFILE\.codex\skills\"
 ```
 
-On macOS or Linux:
+macOS 或 Linux：
 
 ```bash
 git clone https://github.com/huang-sir1/radiology-skills.git
@@ -40,24 +251,23 @@ mkdir -p ~/.codex/skills
 cp -R radiology-skills ~/.codex/skills/
 ```
 
-Restart Codex or reload skills if needed.
+如有需要，重启 Codex 或重新加载 skills。
 
-## Use
+## 使用
 
-Ask Codex with:
+可以这样向 Codex 提问：
 
 ```text
 Use $radiology-skills to design, audit, or write a radiomics or medical imaging deep learning study.
 ```
 
-Typical requests:
+也可以直接用中文提问，例如：
 
-- Find recent radiology AI frontiers for my dataset.
-- Audit my radiomics Methods section for leakage and reporting gaps.
-- Design a validation plan for a CT/MRI/PET deep learning model.
-- Draft Methods, Results, Discussion, or reviewer responses for imaging AI manuscripts.
+- 我有 300 例多中心肝癌 MRI，想找近三年前沿方向并设计课题。
+- 帮我检查这段影像组学 Methods 有没有数据泄漏。
+- 我想做 CT 深度学习预后模型，帮我设计验证方案。
+- 审稿人说没有外部验证，帮我写回复和修改策略。
 
-## Notes
+## 注意
 
-This skill helps plan and audit research. It does not provide clinical diagnosis,
-treatment advice, or patient-specific medical interpretation.
+这个 skill 用于研究设计、方法学审查和论文写作辅助，不提供临床诊断、治疗建议或针对具体患者的医学影像解读。
