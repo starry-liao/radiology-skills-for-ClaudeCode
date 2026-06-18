@@ -9,6 +9,7 @@ Use this file when the user writes in Chinese or provides Chinese author notes.
 | 入口 | intake and routing |
 | 前沿 | research frontier and topic discovery |
 | 文献 | literature search and evidence map |
+| 证据 | 2023-2026 high-impact literature evidence patterns |
 | 公库 | public datasets and public validation cohorts |
 | 组学 | radiomics |
 | 深度 | deep learning |
@@ -39,6 +40,11 @@ Use this file when the user writes in Chinese or provides Chinese author notes.
 | 影像组学 | radiomics |
 | 影像深度学习 | medical imaging deep learning |
 | 前沿方向 | research frontier / emerging direction |
+| 文献证据层 | literature evidence layer |
+| 种子文献 | seed papers |
+| 代表性 PMID | representative PMID |
+| 发表规律 | publication pattern |
+| 期刊规律 | journal pattern |
 | 创新点 | innovation point / contribution |
 | 外部验证 | external validation |
 | 数据泄漏 | data leakage |

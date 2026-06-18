@@ -35,6 +35,18 @@ Rank project ideas by:
 
 Method novelty cannot rescue weak labels or invalid validation.
 
+## Literature-driven design
+
+When the user asks for near-three-year frontiers or high-impact publication logic,
+load:
+
+- `references/literature-evidence-2023-2026.md`
+- `references/frontier-patterns-2023-2026.md`
+
+Use the evidence patterns to choose an archetype, but never force a trendy direction
+onto unsupported data. State the gap between the user's data and the recent high-impact
+pattern.
+
 ## High-impact study archetypes
 
 Choose the closest archetype instead of inventing a vague "AI prediction model" project.
@@ -55,6 +67,8 @@ Choose the closest archetype instead of inventing a vague "AI prediction model" 
 Project option
 - Title:
 - Study type:
+- Literature-driven pattern:
+- Representative PMID seeds:
 - Why this is worth doing:
 - Required data:
 - Minimum viable method:

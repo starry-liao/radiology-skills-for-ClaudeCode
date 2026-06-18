@@ -9,6 +9,7 @@ AI request.
 |---|---|---|
 | `frontier` | User wants new research directions, hotspots, or innovation points | 前沿 |
 | `literature` | User wants recent papers, evidence maps, or search terms | 文献 |
+| `evidence` | User wants 2023-2026 high-impact literature patterns, representative PMID/DOI seed papers, or journal publication规律 behind topic selection | 证据 |
 | `public-datasets` | User asks about TCIA, TCGA, GEO, CPTAC, IDC, public imaging/omics datasets, or public validation cohorts | 公库 |
 | `radiomics` | User describes handcrafted features or Pyradiomics-style workflow | 组学 |
 | `deep-learning` | User describes CNN, transformer, segmentation, classification, foundation models, or multimodal AI | 深度 |
@@ -97,6 +98,7 @@ Ask before final wording when missing facts would otherwise fabricate:
 
 - "我有 200 例 CT 想做预后模型" -> 设计 + 组学 or 深度 + 验证
 - "近三年影像 AI 前沿有哪些" -> 前沿 + 文献
+- "根据近三年高水平期刊发表规律帮我选题" -> 证据 + 前沿 + 文献 + 设计
 - "影像组学模型做完了，想结合转录组和单细胞解释机制" -> 机制 + 组学 + 文献 + 验证
 - "帮我润色国自然立项依据" -> 基金 + 前沿 + 设计 + 写作
 - "ROI 是两位医生勾画的，Methods 怎么写" -> 标注 + 组学 + 规范
@@ -110,4 +112,5 @@ Ask before final wording when missing facts would otherwise fabricate:
 - "伦理、知情同意豁免和数据共享怎么写" -> 伦理 + 数据 + 复现
 - "这个模型怎么做读者研究和临床转化" -> 转化 + 验证 + 统计
 - "文章写好了，帮我选刊" -> 选刊 + 文献 + 规范 + 验证
+- "结合近三年类似文章发表情况判断能不能投 Nature Medicine" -> 证据 + 选刊 + 文献 + 预审
 - "审稿人说没有外部验证怎么回复" -> 回复 + 验证

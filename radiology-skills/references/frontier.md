@@ -17,6 +17,15 @@ When the user asks for "latest", "recent", "near three years", "frontier", "hots
 Use official journal pages, PubMed, arXiv, publisher pages, and high-quality review
 articles as discovery sources. State the search date.
 
+For 2023-2026 high-impact imaging AI patterns, load these files before giving
+literature-driven project suggestions:
+
+- `references/literature-evidence-2023-2026.md`
+- `references/frontier-patterns-2023-2026.md`
+
+State that this is a PubMed-verified curated seed map, not an exhaustive systematic
+review. Refresh the search for final citations or publication-critical claims.
+
 ## Frontier families
 
 | Family | Good fit | Common risk |
@@ -36,11 +45,8 @@ articles as discovery sources. State the search date.
 
 ## High-impact journal patterns, 2023-2026
 
-Use these patterns when converting literature into a project idea. They come from a
-PubMed scan on 2026-06-18 of Radiology, Radiology: Artificial Intelligence, The
-Lancet Digital Health, Nature Medicine, Nature Communications, eClinicalMedicine,
-EBioMedicine, Cell Reports Medicine, JAMA Network Open, The Lancet Oncology, npj
-Digital Medicine, and npj Precision Oncology.
+Use `frontier-patterns-2023-2026.md` for the detailed evidence-linked version. The
+summary below is only the routing layer.
 
 | Pattern | What strong papers tend to do | Project implication |
 |---|---|---|
@@ -69,6 +75,8 @@ Frontier map
 - Best-fitting frontier:
 - Why it fits this dataset:
 - What recent work suggests:
+- Evidence boundary:
+- Representative PMID seeds:
 
 Project option 1
 - Title:

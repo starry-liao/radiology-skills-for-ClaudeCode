@@ -2,6 +2,8 @@
 
 这是一个面向影像组学、影像深度学习和医学影像 AI 研究的 Codex skill，用于帮助研究者完成前沿选题、文献梳理、课题设计、ROI/mask 标注规范、统计分析、图表规划、影像基因组学机制解析、多中心验证、公共数据库使用、伦理与复现、论文写作、投稿预审、选刊投稿、基金申报、临床转化和审稿回复。
 
+升级版新增了一个 **2023-2026 高水平文献证据层**：基于 PubMed 验证的代表性种子文献，整理 Radiology、Radiology: Artificial Intelligence、The Lancet Digital Health、Nature Medicine、Nature Communications、eClinicalMedicine、Cell Reports Medicine、The Lancet Oncology、npj Precision Oncology 等期刊中医学影像 AI、影像组学、影像深度学习、影像基因组学和临床转化相关研究的发表规律。这个证据层用于辅助选题、前沿判断、课题设计和选刊定位，但它不是完整系统综述；最终投稿引用仍应按当天检索结果核验。
+
 ## 按需求分类
 
 ### 1. 我不知道这个课题能不能做
@@ -28,6 +30,7 @@
 
 它会帮你分析：
 
+- 2023-2026 年 PubMed 验证的代表性高水平种子文献；
 - 近三年影像组学和影像深度学习的主要趋势；
 - 基础模型、自监督学习、视觉语言模型、多模态融合、放射基因组学、纵向影像、弱监督、域适应、联邦学习等方向是否适合你的数据；
 - 哪些方向只是热门但不适合你当前数据；
@@ -38,7 +41,28 @@
 - 前沿方向地图；
 - 3-5 个可选课题；
 - 每个课题的研究问题、方法路线、验证路线、创新点和主要风险；
+- 对应的代表性 PMID 种子和文献规律；
 - 不建议选择的方向及原因。
+
+### 证据：我想知道这些建议背后有哪些近三年文献依据
+
+适合场景：你不只是想听“前沿方向”，而是想知道这些判断来自哪些近三年高水平文章、哪些期刊发表了什么类型的研究、哪些规律可以迁移到自己的数据。
+
+它会帮你完成：
+
+- 提供 2023-2026 年 PubMed 验证的代表性种子文献表；
+- 按报告规范、读者研究/真实世界、临床验证、多中心、影像基因组学、多组学、foundation model、生成式 AI、分布式/异质性数据等主题整理规律；
+- 把文献规律转成选题规则：什么数据适合做、什么数据不建议做、最低验证要求是什么；
+- 辅助判断 Nature Medicine、Lancet Digital Health、Lancet Oncology、Radiology、Cell Reports Medicine、npj Precision Oncology 等期刊的证据偏好；
+- 明确哪些结论需要当天重新检索，避免把种子文献当成完整系统综述。
+
+典型输出：
+
+- 文献证据边界；
+- 代表性 PMID/DOI；
+- 近三年前沿规律；
+- 与你数据的匹配和差距；
+- 需要新检索核验的点。
 
 ### 3. 我想系统梳理文献
 
@@ -510,6 +534,8 @@ Use $radiology-skills to design, audit, or write a radiomics or medical imaging 
 也可以直接用中文提问，例如：
 
 - 我有 300 例多中心肝癌 MRI，想找近三年前沿方向并设计课题。
+- 根据 2023-2026 年高水平期刊文献规律，帮我判断这批数据最适合做什么影像 AI 课题。
+- 结合近三年 Radiology、Lancet Digital Health、Nature Medicine、npj Precision Oncology 等期刊发表规律，帮我找创新点。
 - 影像组学模型做完了，我有 bulk RNA、单细胞和空间转录组，帮我设计机制解析路线。
 - 我想申报国自然青年基金，帮我润色立项依据和科学问题。
 - ROI 是两位医生勾画的，帮我设计标注 SOP 和 Methods 写法。
@@ -524,6 +550,7 @@ Use $radiology-skills to design, audit, or write a radiomics or medical imaging 
 - 帮我检查这段影像组学 Methods 有没有数据泄漏。
 - 我想做 CT 深度学习预后模型，帮我设计验证方案。
 - 我的文章已经写好了，帮我结合近年发表情况选刊。
+- 我的文章是单中心回顾性影像组学，没有外部验证，结合近三年高水平期刊规律判断能不能投 Nature Medicine 或 Lancet Digital Health。
 - 审稿人说没有外部验证，帮我写回复和修改策略。
 
 ## 注意

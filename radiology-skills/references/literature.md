@@ -20,6 +20,18 @@ Search for concepts, not only exact titles. Combine:
 3. Publisher pages, PubMed, arXiv, and conference proceedings for discovery.
 4. Secondary databases only as discovery aids.
 
+## 2023-2026 evidence layer
+
+When the user asks for "近三年", "前沿", "高水平期刊", "发表规律", "选题依据",
+or journal-fit evidence, load:
+
+- `references/literature-evidence-2023-2026.md`
+- `references/frontier-patterns-2023-2026.md`
+- `references/journal-patterns-2023-2026.md` when target journals are involved
+
+Use this evidence layer as a PubMed-verified seed map. Do not call it exhaustive.
+For final manuscript citation lists, run a fresh search and update the search date.
+
 ## Screening tiers
 
 | Tier | Meaning |
@@ -96,6 +108,7 @@ Search strategy
 - Date searched:
 - Query concepts:
 - Inclusion logic:
+- Evidence seed boundary:
 
 Evidence map
 | Theme | Representative papers | Why relevant | Transfer risk |

@@ -46,6 +46,7 @@ Identify the task mode, then load only the relevant reference file.
 | What should I ask or collect first? | 入口 | `references/intake.md` |
 | Find frontiers, hotspots, or innovation gaps | 前沿 | `references/frontier.md` |
 | Search, screen, or organize literature | 文献 | `references/literature.md` |
+| Use curated 2023-2026 high-impact literature evidence for frontiers, project design, or journal fit | 证据 | `references/literature-evidence-2023-2026.md`, `references/frontier-patterns-2023-2026.md`, `references/journal-patterns-2023-2026.md` |
 | Use TCIA, TCGA, GEO, CPTAC, IDC, or other public datasets | 公库 | `references/public-datasets.md` |
 | Traditional radiomics workflow | 组学 | `references/radiomics.md` |
 | Deep learning, segmentation, foundation models | 深度 | `references/deep-learning.md` |
@@ -82,8 +83,9 @@ Identify the task mode, then load only the relevant reference file.
    clinical variables, annotation details, statistics plan, ethics/sharing limits,
    and intended output.
 3. **Choose the strictest useful path.** If the user wants an idea, use `前沿`
-   and `设计`. If the user has a draft or methods section, use `验证`, `规范`,
-   and the relevant technical module.
+   and `设计`; if they ask for near-three-year or high-impact literature patterns,
+   also use the 2023-2026 evidence layer. If the user has a draft or methods section,
+   use `验证`, `规范`, and the relevant technical module.
 4. **Expose risks early.** Lead with data leakage, insufficient labels, weak
    endpoint, no patient-level split, no external validation, unclear segmentation,
    weak statistics, center effects, unsupported public-data claims, missing ethics
@@ -220,6 +222,8 @@ Scripts are helpers, not substitutes for manual scientific judgment.
 ## Red lines
 
 - Do not recommend a frontier method just because it is popular.
+- Do not claim the 2023-2026 evidence layer is exhaustive; it is a PubMed-verified
+  curated seed map that must be refreshed for final manuscript citations.
 - Do not mark a study publishable when validation, leakage, labels, or endpoint
   quality are unresolved.
 - Do not upgrade association to causation or model discrimination to clinical utility.
