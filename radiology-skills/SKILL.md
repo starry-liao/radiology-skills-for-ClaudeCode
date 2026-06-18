@@ -5,11 +5,13 @@ description: >-
   radiology deep learning studies. Trigger for requests about imaging research frontiers,
   topic selection, CT/MRI/PET/ultrasound datasets, DICOM/NIfTI/ROI/masks, radiomics
   features, deep learning classification/segmentation/prognosis, multimodal models,
-  external validation, data leakage, CLAIM, CLEAR, RQS, IBSI, TRIPOD+AI, PROBAST+AI,
-  STARD-AI, METRICS, manuscript Methods/Results/Discussion, target journal selection,
-  journal fit, submission strategy, grant applications, NSFC/national or provincial
-  natural science foundation proposals, reviewer response, or Chinese-to-English
-  radiology manuscript support.
+  radiogenomics, radio-transcriptomics, 影像基因组学, 放射基因组学, 多组学机制解析,
+  multi-omics mechanism interpretation, bulk RNA-seq, single-cell RNA-seq, spatial
+  transcriptomics, external validation, data leakage, CLAIM, CLEAR, RQS, IBSI,
+  TRIPOD+AI, PROBAST+AI, STARD-AI, METRICS, manuscript Methods/Results/Discussion,
+  target journal selection, journal fit, submission strategy, grant applications,
+  NSFC/national or provincial natural science foundation proposals, reviewer response,
+  or Chinese-to-English radiology manuscript support.
 ---
 
 # Radiology Skills
@@ -48,6 +50,7 @@ Identify the task mode, then load only the relevant reference file.
 | Search, screen, or organize literature | 文献 | `references/literature.md` |
 | Traditional radiomics workflow | 组学 | `references/radiomics.md` |
 | Deep learning, segmentation, foundation models | 深度 | `references/deep-learning.md` |
+| Interpret radiomics or imaging AI models with transcriptomics, single-cell RNA-seq, spatial transcriptomics, or multi-omics data | 机制 | `references/mechanism.md` |
 | Turn data into a feasible study | 设计 | `references/study-design.md` |
 | Polish or restructure grant/funding proposals for imaging AI projects | 基金 | `references/grant-writing.md` |
 | Check validation, leakage, metrics, calibration | 验证 | `references/validation.md` |
@@ -62,8 +65,8 @@ Identify the task mode, then load only the relevant reference file.
 ## Standard workflow
 
 1. **Route.** Classify the request as `frontier`, `literature`, `radiomics`,
-   `deep-learning`, `study-design`, `grant-writing`, `validation`, `checklist`,
-   `data`, `writing`, `journal-selection`, `response`, or `mixed`.
+   `deep-learning`, `mechanism`, `study-design`, `grant-writing`, `validation`,
+   `checklist`, `data`, `writing`, `journal-selection`, `response`, or `mixed`.
 2. **Build the study card.** Capture disease, modality, sample size, centers,
    labels, endpoint, segmentation, data format, split plan, external validation,
    clinical variables, and intended output.
@@ -152,6 +155,27 @@ For grant proposal polishing, return:
 - [missing facts before final proposal text]
 ```
 
+For mechanism/radiogenomics interpretation, return:
+
+```text
+机制解析定位
+- 影像模型：
+- 可用组学：
+- 核心生物学问题：
+
+整合路线
+- bulk RNA：
+- 单细胞：
+- 空间转录组：
+- 其他组学：
+
+证据链
+- 影像表型 -> 分子通路 -> 细胞类型/空间生态位 -> 临床终点
+
+风险和限制
+- [matching, batch, multiple testing, causality, validation]
+```
+
 ## Scripts
 
 - `scripts/radiology_audit.py`: quick Markdown audit from a JSON study card.
@@ -172,3 +196,5 @@ Scripts are helpers, not substitutes for manual scientific judgment.
 - Do not promise acceptance or rank journals only by impact factor.
 - Do not invent grant preliminary results, team expertise, publications, ethics approvals,
   equipment, funded projects, collaborations, or official guideline requirements.
+- Do not claim biological mechanism from correlation alone; distinguish association,
+  mediation, validation, and causal evidence.

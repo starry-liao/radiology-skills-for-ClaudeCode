@@ -11,6 +11,7 @@ AI request.
 | `literature` | User wants recent papers, evidence maps, or search terms | 文献 |
 | `radiomics` | User describes handcrafted features or Pyradiomics-style workflow | 组学 |
 | `deep-learning` | User describes CNN, transformer, segmentation, classification, foundation models, or multimodal AI | 深度 |
+| `mechanism` | User asks how radiomics/deep learning model scores relate to genomics, transcriptomics, single-cell, spatial transcriptomics, pathways, immune microenvironment, or biological mechanisms | 机制 |
 | `study-design` | User gives data and asks what project can be done | 设计 |
 | `grant-writing` | User asks to write, polish, revise, or structure NSFC/national or provincial natural science foundation proposals | 基金 |
 | `validation` | User asks whether the model or result is reliable | 验证 |
@@ -38,6 +39,10 @@ endpoint:
 follow_up:
 segmentation:
 clinical_variables:
+omics_data:
+paired_omics:
+omics_sample_size:
+omics_platform:
 split_plan:
 external_validation:
 model_type:
@@ -67,6 +72,7 @@ Ask before final wording when missing facts would otherwise fabricate:
 
 - "我有 200 例 CT 想做预后模型" -> 设计 + 组学 or 深度 + 验证
 - "近三年影像 AI 前沿有哪些" -> 前沿 + 文献
+- "影像组学模型做完了，想结合转录组和单细胞解释机制" -> 机制 + 组学 + 文献 + 验证
 - "帮我润色国自然立项依据" -> 基金 + 前沿 + 设计 + 写作
 - "帮我看 Methods 是否符合 CLAIM" -> 规范 + 深度 + 验证
 - "文章写好了，帮我选刊" -> 选刊 + 文献 + 规范 + 验证

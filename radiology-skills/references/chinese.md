@@ -11,6 +11,7 @@ Use this file when the user writes in Chinese or provides Chinese author notes.
 | 文献 | literature search and evidence map |
 | 组学 | radiomics |
 | 深度 | deep learning |
+| 机制 | radiogenomics and multi-omics mechanism interpretation |
 | 设计 | study design |
 | 基金 | grant proposal writing |
 | 验证 | validation and leakage |
@@ -39,6 +40,17 @@ Use this file when the user writes in Chinese or provides Chinese author notes.
 | 疗效预测 | treatment response prediction |
 | 多模态融合 | multimodal fusion |
 | 临床实用性 | clinical utility |
+| 影像基因组学 | radiogenomics |
+| 放射基因组学 | radiogenomics |
+| 影像转录组学 | radio-transcriptomics / imaging transcriptomics |
+| 多组学 | multi-omics |
+| bulk 转录组 | bulk RNA-seq |
+| 单细胞转录组 | single-cell RNA-seq |
+| 空间转录组 | spatial transcriptomics |
+| 免疫微环境 | immune microenvironment |
+| 通路富集 | pathway enrichment |
+| 细胞通讯 | cell-cell communication |
+| 空间生态位 | spatial niche |
 | 选刊 | target journal selection |
 | 投稿定位 | submission positioning |
 | 期刊匹配度 | journal fit |
