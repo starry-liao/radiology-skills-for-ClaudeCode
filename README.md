@@ -22,23 +22,40 @@ reviewer response.
 
 ## Install
 
-Copy the skill folder into your Codex skills directory:
+Clone this repository and copy the skill folder into your Codex skills directory:
 
 ```powershell
-Copy-Item -Recurse .\radiology-skills "$env:USERPROFILE\.codex\skills\radiology-skills"
+git clone https://github.com/iamjaxjax/radiology-skills.git
+cd radiology-skills
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force .\radiology-skills "$env:USERPROFILE\.codex\skills\"
+```
+
+On macOS or Linux:
+
+```bash
+git clone https://github.com/iamjaxjax/radiology-skills.git
+cd radiology-skills
+mkdir -p ~/.codex/skills
+cp -R radiology-skills ~/.codex/skills/
 ```
 
 Restart Codex or reload skills if needed.
 
-## Public-Repo Push
+## Use
 
-After creating an empty GitHub repository named `radiology-skills`, run:
+Ask Codex with:
 
-```powershell
-git remote add origin https://github.com/<your-name>/radiology-skills.git
-git branch -M main
-git push -u origin main
+```text
+Use $radiology-skills to design, audit, or write a radiomics or medical imaging deep learning study.
 ```
+
+Typical requests:
+
+- Find recent radiology AI frontiers for my dataset.
+- Audit my radiomics Methods section for leakage and reporting gaps.
+- Design a validation plan for a CT/MRI/PET deep learning model.
+- Draft Methods, Results, Discussion, or reviewer responses for imaging AI manuscripts.
 
 ## Notes
 
