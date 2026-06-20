@@ -39,7 +39,9 @@ asks for Chinese only.
 
 ## First move
 
-Identify the task mode, then load only the relevant reference file.
+Identify the task mode, then load only the relevant reference file. If the
+request needs deeper module-specific rules, load the matching internal module
+under `modules/`.
 
 | User intent | Module | Open |
 |---|---|---|
@@ -69,6 +71,37 @@ Identify the task mode, then load only the relevant reference file.
 | Reviewer response and revision strategy | 回复 | `references/response.md` |
 | Chinese author notes and terminology | 中文 | `references/chinese.md` |
 | Guideline/source provenance | 依据 | `references/sources.md` |
+
+## Internal modules
+
+Use these only when the concise reference file is not enough for the task. Each
+module is bundled inside this same `radiology-skills` skill; do not ask the user
+to install it separately.
+
+| Task need | Open for detailed rules |
+|---|---|
+| Frontier direction and publication-pattern evidence | `modules/radiology-frontier/SKILL.md` |
+| Study feasibility and validation design | `modules/radiology-design/SKILL.md` |
+| Literature, public dataset, DOI/PMID, or source search | `modules/radiology-search/SKILL.md` |
+| ROI, VOI, mask, segmentation, reader protocol, or annotation QC | `modules/radiology-annotation/SKILL.md` |
+| Data availability, DICOM de-identification, repositories, or FAIR | `modules/radiology-data/SKILL.md` |
+| Ethics, consent, privacy, or data governance | `modules/radiology-ethics/SKILL.md` |
+| Hand-crafted radiomics and IBSI/CLEAR workflows | `modules/radiology-radiomics/SKILL.md` |
+| CNN, Transformer, foundation model, segmentation, or deep-learning design | `modules/radiology-deep-learning/SKILL.md` |
+| Radiogenomics, transcriptomics, single-cell, spatial, or multi-omics mechanism | `modules/radiology-radiogenomics/SKILL.md` |
+| ROC, calibration, DCA, MRMC, survival, sample size, or high-dimensional statistics | `modules/radiology-stats/SKILL.md` |
+| Publication figures, Radiology-style charts, or imaging panels | `modules/radiology-figure/SKILL.md` |
+| CLAIM, TRIPOD+AI, CLEAR, RQS, IBSI, STARD, PRISMA-DTA, PROBAST, or compliance audit | `modules/radiology-reporting/SKILL.md` |
+| Manuscript drafting or section reconstruction | `modules/radiology-writing/SKILL.md` |
+| Radiology-style English polishing | `modules/radiology-polishing/SKILL.md` |
+| Full-paper bilingual reading | `modules/radiology-reader/SKILL.md` |
+| Citation retrieval or reference export | `modules/radiology-citation/SKILL.md` |
+| Pre-submission mock review | `modules/radiology-prereview/SKILL.md` |
+| Journal selection and submission tiering | `modules/radiology-journal/SKILL.md` |
+| Reviewer response and revision strategy | `modules/radiology-response/SKILL.md` |
+| Clinical translation, reader study, prospective validation, or deployment | `modules/radiology-translation/SKILL.md` |
+| NSFC, provincial, or institutional grant writing | `modules/radiology-grant/SKILL.md` |
+| Imaging paper to Chinese journal-club PPT | `modules/radiology-paper2ppt/SKILL.md` |
 
 ## Standard workflow
 

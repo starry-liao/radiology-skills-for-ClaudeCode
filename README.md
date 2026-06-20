@@ -309,14 +309,11 @@
 
 ## 安装
 
-这个仓库现在支持两种安装方式：
+这个仓库现在只有一个可安装入口：`radiology-skills/`。
 
-1. `radiology-skills/`：单体总入口，适合想用一个统一 skill 处理所有影像组学、影像深度学习和医学影像 AI 任务的用户。
-2. `skills/radiology-*`：模块化套件，适合想让 Codex 按任务自动触发更细分模块的用户。
+22 个细分模块已经合并到 `radiology-skills/modules/`，由总入口按任务自动读取，不需要单独安装。
 
 更详细的安装说明见 [install.md](install.md)。
-
-### 方式一：安装单体总入口
 
 ```powershell
 git clone https://github.com/huang-sir1/radiology-skills.git
@@ -334,27 +331,7 @@ mkdir -p ~/.codex/skills
 cp -R radiology-skills ~/.codex/skills/
 ```
 
-### 方式二：安装 22 个独立模块
-
-Windows PowerShell：
-
-```powershell
-git clone https://github.com/huang-sir1/radiology-skills.git
-cd radiology-skills
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse -Force .\skills\radiology-* "$env:USERPROFILE\.codex\skills\"
-```
-
-macOS 或 Linux：
-
-```bash
-git clone https://github.com/huang-sir1/radiology-skills.git
-cd radiology-skills
-mkdir -p ~/.codex/skills
-cp -R skills/radiology-* ~/.codex/skills/
-```
-
-22 个独立模块包括：
+内部 22 个模块包括：
 
 | 模块 | 用途 |
 |---|---|
