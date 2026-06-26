@@ -1,6 +1,6 @@
 # Radiology Skills for Claude Code
 
-> **适配版** — 由 [radiology-skills](https://github.com/huang-sir1/radiology-skills) 稍作修改而来，使其可在 **Claude Code** 中使用。
+> **适配版** — 由 [radiology-skills](https://github.com/huang-sir1/radiology-skills) 修改而来，使其可在 **Claude Code** 中使用。
 
 ---
 
@@ -10,13 +10,9 @@
 
 **原作者 / Original Authors：黄sir组学工作室**
 
-- **Huang Yuhong**（黄宇虹）—《Radiology》原创性研究第一作者
-- **Gu Wenchao**（顾文超）—《Radiology》原创性研究第一作者
-- **Song Xinyang**（宋新阳）—《Radiology》原创性研究第一作者
-
 三位作者均为发表过《Radiology》原创性研究的第一作者，对影像组学领域有深刻认知。他们开发了这个面向影像组学、影像深度学习和医学影像 AI 研究的全开源技能包，涵盖从选题到发表的完整研究流程。
 
-**本项目的所有核心内容（技能逻辑、参考文件、模块、脚本、红线规则）均来自原作者的工作**。我们只是在技术层面做了最小化的适配，使其能在 Claude Code 环境下运行。请充分尊重原作者的原创性和辛勤付出。
+**本项目的所有核心内容（技能逻辑、参考文件、模块、脚本、红线规则）均来自原作者的工作**，只是在技术层面做了最小化的适配，使其能在 Claude Code 环境下运行。请充分尊重原作者的原创性和辛勤付出。
 
 如果你觉得这个技能对你有帮助，请给原始仓库 [huang-sir1/radiology-skills](https://github.com/huang-sir1/radiology-skills) 点一个 Star ⭐。
 
