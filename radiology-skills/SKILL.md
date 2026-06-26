@@ -39,9 +39,9 @@ asks for Chinese only.
 
 ## First move
 
-Identify the task mode, then load only the relevant reference file. If the
-request needs deeper module-specific rules, load the matching internal module
-under `modules/`.
+Identify the task mode, then use the Read tool to load the relevant reference
+file from `references/`. If the request needs deeper module-specific rules,
+Read the matching internal module SKILL.md under `modules/<module-name>/SKILL.md`.
 
 | User intent | Module | Open |
 |---|---|---|
@@ -75,8 +75,9 @@ under `modules/`.
 ## Internal modules
 
 Use these only when the concise reference file is not enough for the task. Each
-module is bundled inside this same `radiology-skills` skill; do not ask the user
-to install it separately.
+module is bundled inside this same `radiology-skills` skill as
+`modules/<name>/SKILL.md`; Read them with the Read tool as needed. Do not ask
+the user to install modules separately.
 
 | Task need | Open for detailed rules |
 |---|---|

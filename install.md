@@ -1,6 +1,6 @@
 # Installation
 
-`radiology-skills` has one installable Codex skill folder: `radiology-skills/`.
+`radiology-skills` has one installable Claude Code skill folder: `radiology-skills/`.
 
 The detailed radiology modules are bundled inside `radiology-skills/modules/` and are loaded by the main skill when needed. Do not copy `modules/` as separate skills.
 
@@ -9,8 +9,8 @@ The detailed radiology modules are bundled inside `radiology-skills/modules/` an
 ```powershell
 git clone https://github.com/huang-sir1/radiology-skills.git
 cd radiology-skills
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse -Force .\radiology-skills "$env:USERPROFILE\.codex\skills\"
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
+Copy-Item -Recurse -Force .\radiology-skills "$env:USERPROFILE\.claude\skills\"
 ```
 
 ## macOS or Linux
@@ -18,11 +18,11 @@ Copy-Item -Recurse -Force .\radiology-skills "$env:USERPROFILE\.codex\skills\"
 ```bash
 git clone https://github.com/huang-sir1/radiology-skills.git
 cd radiology-skills
-mkdir -p ~/.codex/skills
-cp -R radiology-skills ~/.codex/skills/
+mkdir -p ~/.claude/skills
+cp -R radiology-skills ~/.claude/skills/
 ```
 
-Restart Codex or reload skills after copying.
+Restart Claude Code or reload skills after copying.
 
 ## Optional dependencies
 
